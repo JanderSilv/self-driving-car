@@ -1,0 +1,43 @@
+:root {
+  --blue-3: #0d2847;
+  --blue-4: #003362;
+  --blue-5: #004074;
+}
+
+body {
+  margin: 0;
+  background: darkgray;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#actions {
+  display: flex;
+  flex-direction: column;
+}
+
+#actions button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 5px 7px 5px;
+  margin: 2px;
+  transition: background 0.2s ease-in-out;
+}
+
+#actions button:hover {
+  background: var(--blue-5);
+}
+#actions button:active {
+  background: var(--blue-3);
+}
+
+#car-canvas {
+  background: lightgray;
+}
+#network-canvas {
+  background: black;
+}

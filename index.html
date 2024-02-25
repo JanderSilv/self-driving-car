@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+  <link rel="stylesheet" href="/src/styles/style.css" />
+  <title>Self Driving Car</title>
+</head>
+
+<body>
+  <canvas id="car-canvas"></canvas>
+  <div id="actions">
+    <button onclick="saveBestCar()">
+      <span title="save">💾</span>
+    </button>
+    <button onclick="discardBestCar()">
+      <span title="discard">🗑️</span>
+    </button>
+  </div>
+  <canvas id="network-canvas"></canvas>
+  <script src="/build/scripts/storage.js"></script>
+  <script src="/build/scripts/visualizer.js"></script>
+  <script src="/build/scripts/network.js"></script>
+  <script src="/build/scripts/helpers.js"></script>
+  <script src="/build/scripts/road.js"></script>
+  <script src="/build/scripts/controls.js"></script>
+  <script src="/build/scripts/sensor.js"></script>
+  <script src="/build/scripts/car.js"></script>
+  <script src="/build/scripts/main.js"></script>
+</body>
+
+</html>
